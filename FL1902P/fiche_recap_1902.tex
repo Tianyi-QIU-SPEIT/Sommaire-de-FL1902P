@@ -7,9 +7,9 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{hyperref}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{amssymb, amsmath, amsfonts}
 \usepackage{geometry}
+\usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage{ctex}
 \usepackage{tcolorbox}
@@ -60,16 +60,15 @@
 \section*{Avant-propos}
 \addcontentsline{toc}{part}{Avant-propos}
 
-FL1902P est le premier cours de maths et de physique que les élèves de SPEIT vont rencontrer dans 2.5 ans de classes préparatoires. Plus spécifiquement, toutes les notions et objets mathématiques qu'on va étudier ici font partie de la base des maths. La logique, les ensembles, les méthodes de démonstration et les applications sont à maîtriser si vous avez envie de bien faire les mathématiques après. Mais, ayant entendu les commentaires des professeurs de la deuxième année, c'est claire que la rédaction et les raisonnements sont encore un désastre, et plus fondamentalement les élèves ne comprennent pas l'importance de tout \c ca.
+FL1902P est le premier cours de mathématiques(et de physique) que les élèves de SPEIT vont rencontrer après 2,5 ans de classes préparatoires. Plus spécifiquement, toutes les notions et objets mathématiques qu'on va étudier ici font partie des bases des mathématiques. La logique, les ensembles, les méthodes de démonstration et les applications sont à maîtriser si vous souhaitez bien réussir en mathématiques par la suite. Cependant, après avoir entendu les commentaires des professeurs de deuxième année, il est clair que la rédaction et les raisonnements sont encore un désastre. Plus fondamentalement, les élèves ne comprennent pas l’importance de tout cela.
 
-On voit que dans le code il y a l'abréviation FL pour foreign language mais ce n'est pas à dire que dans ce cours on n'étudiera que la langue. A cause de \c ca(et le fait que ce cours n'a que 4 crédits, moins qu'un cour de langue par exemple), parfois les gens pensent que c'est un cours facile, qu'il n'a pas d'importance, et que c'est un gaspillage de temps si on prend trop de temps pour comprendre bien le contenu de ce cours. Ce sont les opinions fausses et bigleuses. De plus, il est inutile de blâmer le professeur de mathématiques si quelqu'un n'avait aucune intention d'apprendre la matière au départ! 
+On voit que dans le code du cours, il y a l’abréviation FL pour foreign language, mais cela ne signifie pas que l’on n’y étudiera que la langue. À cause de cela (et du fait que ce cours ne compte que 4 crédits, soit moins qu’un cours de langue, par exemple), certains élèves pensent parfois que c’est un cours facile, sans importance, et qu’il est une perte de temps d’y consacrer trop d’efforts pour bien en comprendre le contenu. Ce sont des opinions erronées et myopes. De plus, il est inutile de blâmer le professeur de mathématiques si quelqu’un n’avait, dès le départ, aucune intention d’apprendre la matière!
 
-Donc, ce fichier servira à rappeler les notions fondamentales de FL1902P pour les élèves en 1e ou 2e. Il y a 4 chapitres, qui portent sur le programme du cours: la logique, les ensembles, les applications et les démonstrations. Ici j'ai changé l'ordre des chapitres un petit peu, parce que si on veut bien faire les ensembles il y aura les choses qu'on doit expliquer avant(les éléments de logique).
+Ce fichier servira donc à rappeler les notions fondamentales de FL1902P aux élèves de première ou deuxième année. Il contient quatre chapitres, qui couvrent le programme du cours : la logique, les ensembles, les applications et les démonstrations. J’ai légèrement modifié l’ordre des chapitres, car, pour bien comprendre les ensembles, certains éléments de logique doivent être expliqués au préalable.
 
-Une remarque: le programme pour ce cours a été changé plusieurs fois, et je crois que l'école va publier une version papier plus tard avec plein de changements. Pour moi, la partie des probabilités était encore là, mais l'année prochaine les élèves auront la dénombrabilité et la cardinalité, etc. Ici je ne garderai que les 4 premiers chapitres, et je vais mettre les compléments sur les ensembles dans le fichier de MATH1301P.
+Une remarque : le programme de ce cours a été modifié plusieurs fois, et je pense que l’école publiera une version papier plus tard, avec de nombreux changements. Pour ma part, la partie sur les probabilités était encore incluse, mais l’année prochaine, les élèves étudieront la dénombrabilité et la cardinalité, etc. Ici, je ne conserverai que les quatre premiers chapitres.
 
-Bonne continuation et bon courage à tous et à toutes!
-
+Bonne continuation et bon courage à toutes et à tous!
 
 
 \newpage
@@ -513,7 +512,7 @@ Supposons que $F \subset E$, dans ce cas la différence $E \backslash F$ s'appel
 
 \end{tcolorbox}
 
-Remarque: toutes ces définitions s'écrivent aussi avec les quantificateurs et la logique propositionnelle.
+Remarque: toutes ces définitions s'écrivent aussi avec la logique propositionnelle.
 
 \section{Ensemble des sous-ensembles}
 
@@ -572,8 +571,7 @@ On appelle l'ensemble $E \times F$ le \textbf{produit cartésien} de $E$ et $F$,
 On écrit souvent: $E \times F$ = $\{ (x,y); x \in E$ et $y \in F\}$
 \tcblower
 
-Cela se généralise avec les n-uplets aussi. Voyez le fichier MATH1301P qui viendra plus tard.
-
+Cela se généralise avec les n-uplets aussi. 
 \end{tcolorbox}
 
 Remarque: On utilise couramment un produit cartésien quand on travaille dans le plan usuel et dans un repère cartésien(voir le cours PHY1301P: Mécanique I) et on identifie chaque point du plan avec le couple de ses coordonnées.
@@ -661,7 +659,7 @@ Remarque sur les applications : si on veut définir rigoureusement une applicati
 En fait, $f$ est une application de $E$ vers $F$ si $f$ est un sous-ensemble de $E \times E$ vérifiant :
 $\forall x \in E, \exists ! y \in F, (x,y) \in f$.
 
-On choisit de noter "$f(x)=y$" plutot que "$(x,y) \in f$"
+On choisit de noter "$f(x)=y$" plutot que "$(x,y) \in f$".
 
 
 \end{tcolorbox}
@@ -977,12 +975,89 @@ Vous trouverez qu'une application et ses propriétés sont très générales, ca
 \newpage
 \part{La démonstration}
 
+Dans cette partie on va donner quelques types de raisonnements pour vous aider dans les démonstrations. Après chaque point, vous trouverez un exemple classique ou un exemple extrait du cours/TD de Monsieur Hamza que j'ai suivi, avec la correction, pour vous montrer comment rédiger proprement un exercice.
+
+Je remercie sincèrement Monsieur Manuel Mansuy pour son cours de MP2I au Lycée Carnot, qui m'ont donné l'idée de comment structurer cette section, ainsi que plusieurs exercices pour le chapitre.
+
+\section{À partir des définitions...}
+
+Dans cette section on donne les méthodes et les propriétés qui sont utiles pour les démonstrations. Comme le titre dit, la majorité de ces méthodes sont les applications directes des définitions qu'on connaît déjà.
+
+\subsection{Assertions universelles}
+
+
+
+\subsection{Assertions existentielles}
+
+
+
+\subsection{Implications(des assertions)}
+
+
+
+\subsection{Équivalence(des assertions)}
+
+
+
+\subsection{Inclusion des ensembles}
+
+
+
+\subsection{Égalité des ensembles}
+
+
+
+\subsection{Unicité}
 
 
 
 
 
 
+
+
+
+\section{Méthodes et types de démonstration}
+
+
+
+\subsection{Raisonnement par disjonction des cas*}
+
+
+
+\subsection{Raisonnement déductif*}
+
+
+
+\subsection{Raisonnement par l'absurde}
+
+
+
+\subsection{Raisonnement par la contraposée}
+
+
+
+\subsection{Raisonnement par analyse-synthèse}
+
+
+
+\subsection{Récurrence}
+
+
+
+\subsubsection{Récurrence simple}
+
+
+
+\subsubsection{Récurrence double(à pas fixé)}
+
+
+
+\subsubsection{Récurrence forte}
+
+
+
+\subsubsection{Récurrence finie}
 
 
 
