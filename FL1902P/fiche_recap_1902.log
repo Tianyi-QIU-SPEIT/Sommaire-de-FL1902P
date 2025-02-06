@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  3 FEB 2025 14:07
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  6 FEB 2025 09:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1293,7 +1293,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
 
-[27] (./fiche_recap_1902.aux)
+[27]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.69003pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.69003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
+
+[28] (./fiche_recap_1902.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
@@ -1302,12 +1311,12 @@ Package rerunfilecheck Info: File `fiche_recap_1902.out' has not changed.
 (rerunfilecheck)             Checksum: C33EC5E70FD1598BB20A90EFFC3B37F1;6494.
  ) 
 Here is how much of TeX's memory you used:
- 29287 strings out of 474773
- 618450 string characters out of 5757724
+ 29288 strings out of 474773
+ 618466 string characters out of 5757724
  1934839 words of memory out of 5000000
- 50945 multiletter control sequences out of 15000+600000
+ 50946 multiletter control sequences out of 15000+600000
  587568 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,12n,97p,1013b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on fiche_recap_1902.pdf (27 pages).
+Output written on fiche_recap_1902.pdf (28 pages).

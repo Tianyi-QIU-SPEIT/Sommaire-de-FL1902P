@@ -102,12 +102,16 @@ Pour nous, la notion d'assertion(ou une affirmation) peut être difficile à dé
 
 La première est vraie, la deuxième est fausse. 3 et 4 sont un peu plus compliquées car leurs vérités dépendent de l'ensemble de définition ou les valeurs de $x$, $a$ et $b$. Par exemple, si on sait déjà que $x$ vaut 1, l'assertion 3 est vraie et fausse sinon; et la 4e est vraie si $a$ et $b$ sont les réels, mais on ne peut rien dire s'ils sont les matrices carrées d'ordre $n$.
 
+
+
 Donc, on va utiliser une définition (qui n'est pas vraiment rigoreuse):
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Définition 1.1]
   Intuitivement, une \textbf{assertion} est une phrase mathématique sans variable, à laquelle on peut donner un sens. On admet de plus qu'une telle assertion est soit vraie soit fausse.
   \tcblower
   Ici, on dit qu'une assertion est sans variable car les affirmations mathématiques avec variables seront définies plus tard dans ce chapitre(appelées \textbf{Prédicats}).
 \end{tcolorbox}
+
+Remarque: dans les exemples que je vous ai donné, le 3 et 4 sont des assertions SEULEMENT si $x$ et $a$, $b$ ont été définies au préalable.
 
 D'une manière similaire, on peut dire(intuitivement) qu'une assertion mathématique ne peut pas être vraie et fausse simultanément. Comme on se place dans le domaine des maths, on a unicité et pas les deux. Plus formellement on dit que c'est le \textbf{principe du tiers exclu}.
 
@@ -509,13 +513,21 @@ Supposons que $F \subset E$, dans ce cas la différence $E \backslash F$ s'appel
 
 \end{tcolorbox}
 
+Remarque: toutes ces définitions s'écrivent aussi avec les quantificateurs et la logique propositionnelle.
+
 \section{Ensemble des sous-ensembles}
 
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Définition 2.7]
 
 Soit $E$ un ensemble. 
 
-On note $\mathcal{P}(E)$ l'ensemble qui contient tous les sous-ensembles de $E$.
+Il existe l'ensemble des sous-ensembles d'un ensemble, on le note $\mathcal{P}(E)$. 
+
+On a $A \in \mathcal{P}(E) \iff A \subset E$
+
+\tcblower
+
+L'existence est assuré par un axiome de la théorie des ensembles.
 
 \end{tcolorbox}
 
@@ -565,6 +577,9 @@ Cela se généralise avec les n-uplets aussi. Voyez le fichier MATH1301P qui vie
 \end{tcolorbox}
 
 Remarque: On utilise couramment un produit cartésien quand on travaille dans le plan usuel et dans un repère cartésien(voir le cours PHY1301P: Mécanique I) et on identifie chaque point du plan avec le couple de ses coordonnées.
+
+
+
 
 
 
@@ -639,7 +654,17 @@ On utilise $\mathcal{F}(A,B)$ pour représenter l'ensemble des applications de $
 \end{tcolorbox}
 
 
+\begin{tcolorbox}[colback=purple!5!white,colframe=purple!75!black,title=Remarque importante]
 
+Remarque sur les applications : si on veut définir rigoureusement une application, on la définit à partir de son graphe, donc comme un sous-ensemble de $E \times F$. 
+
+En fait, $f$ est une application de $E$ vers $F$ si $f$ est un sous-ensemble de $E \times E$ vérifiant :
+$\forall x \in E, \exists ! y \in F, (x,y) \in f$.
+
+On choisit de noter "$f(x)=y$" plutot que "$(x,y) \in f$"
+
+
+\end{tcolorbox}
 
 
 \subsection{Quelques exemples}
@@ -687,7 +712,7 @@ On utilise la notaion $\prod\limits_{i \in I} E_i$ au lieu d'écrire l'ensemble:
 
 \tcblower
 
-Ici $I = \{1,2, ... ,n\}$.
+Ici $I = \{1,2, ... ,n\}$ pour $n$ ensembles, mais on peut prendre $I$ infini.
 
 
 \end{tcolorbox}
@@ -941,10 +966,9 @@ Soit $f \in \mathcal{F}(E,F)$. Si $A \subset E$ et $B \subset F$, on appelle :
 
 Vous pouvez voir que l'image directe d'un ensemble est la collection des images de ses éléments, et l'inverse pour l'image réciproque.
 
-Attention: j'écris $f^{-1}(B)$ pour $f$ et $B$, mais $f$ n'est pas forcément bijective. 
+Attention: j'écris $f^{-1}(B)$ pour l'image réciproque de $B$ par $f$, mais $f$ n'est pas forcément bijective, ne confondre pas avec l'application réciproque. 
 
 Vous trouverez qu'une application et ses propriétés sont très générales, car on ne spécifie pas la nature des éléments. Plus tard vous allez étudier d'abord les fonctions réelles des variables réelles, où l'ensemble de définition est une partie de $\mathbb{R}$, et les fonctions vectorielles, qui projète les éléments dans l'espace de dimension $n$. Travaillez bien ce chapitre pour que vous puissiez maîtriser les autres chapitres plus tard.
-
 
 
 
@@ -953,9 +977,6 @@ Vous trouverez qu'une application et ses propriétés sont très générales, ca
 \newpage
 \part{La démonstration}
 
-En maths, on voyage à partir de quelques définitions et on trouve/déduire les propriétés, théorèmes, etc. Mais pour que ces assertions soient justifiées, il est indispensable de démontrer logiquement, avec ce qu'on sait.
-
-Dans ce chapitre on va décrire comment rédiger une démonstration rigoureusement et correctement, avec des méthodes plus spécifiques qui se sont avérées efficaces lors de démonstrations.
 
 
 
