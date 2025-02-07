@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  6 FEB 2025 22:37
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  7 FEB 2025 12:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1313,21 +1313,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
 
-[29] (./fiche_recap_1902.aux)
+[29]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.69003pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.69003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
+
+[30]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.69003pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.69003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
+
+[31]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.69003pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.69003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
+
+[32] (./fiche_recap_1902.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `fiche_recap_1902.out' has not changed.
-(rerunfilecheck)             Checksum: D73EC0C74896292A7B719BB3980550E5;10123.
+(rerunfilecheck)             Checksum: 1C95ECF40CACAE6EFC582AFF7D100ABE;10209.
  ) 
 Here is how much of TeX's memory you used:
- 29291 strings out of 474773
- 618445 string characters out of 5757724
+ 29324 strings out of 474773
+ 618976 string characters out of 5757724
  1934839 words of memory out of 5000000
- 50949 multiletter control sequences out of 15000+600000
+ 50982 multiletter control sequences out of 15000+600000
  587568 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,12n,97p,1013b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on fiche_recap_1902.pdf (29 pages).
+Output written on fiche_recap_1902.pdf (32 pages).
