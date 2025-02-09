@@ -41,19 +41,25 @@
 \contentsline {subsection}{\numberline {1.1}Assertions universelles}{28}{subsection.4.1.1}%
 \contentsline {paragraph}{Preuve:}{28}{section*.3}%
 \contentsline {subsection}{\numberline {1.2}Assertions existentielles}{29}{subsection.4.1.2}%
+\contentsline {paragraph}{Preuve:}{29}{section*.4}%
 \contentsline {subsection}{\numberline {1.3}Implication(des assertions)}{29}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {1.4}Équivalence(des assertions)}{29}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {1.5}Inclusion des ensembles}{29}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {1.6}Égalité des ensembles}{30}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {1.7}Unicité}{30}{subsection.4.1.7}%
-\contentsline {section}{\numberline {2}Méthodes et types de démonstration}{30}{section.4.2}%
-\contentsline {subsection}{\numberline {2.1}Raisonnement par disjonction des cas*}{30}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {2.2}Raisonnement déductif*}{30}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {2.3}Raisonnement par l'absurde}{31}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {2.4}Raisonnement par la contraposée}{31}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {2.5}Raisonnement par analyse-synthèse}{31}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {2.6}Récurrence}{31}{subsection.4.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}Récurrence simple}{31}{subsubsection.4.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.2}Récurrence double(éventuellement à pas fixé*)}{31}{subsubsection.4.2.6.2}%
-\contentsline {subsubsection}{\numberline {2.6.3}Récurrence forte}{32}{subsubsection.4.2.6.3}%
-\contentsline {subsubsection}{\numberline {2.6.4}Récurrence finie*}{32}{subsubsection.4.2.6.4}%
+\contentsline {paragraph}{Preuve:}{30}{section*.5}%
+\contentsline {subsection}{\numberline {1.4}Équivalence(des assertions)}{30}{subsection.4.1.4}%
+\contentsline {paragraph}{Preuve:}{30}{section*.6}%
+\contentsline {subsection}{\numberline {1.5}Inclusion des ensembles}{30}{subsection.4.1.5}%
+\contentsline {paragraph}{Preuve:}{30}{section*.7}%
+\contentsline {subsection}{\numberline {1.6}Égalité des ensembles}{31}{subsection.4.1.6}%
+\contentsline {paragraph}{Preuve:}{31}{section*.8}%
+\contentsline {subsection}{\numberline {1.7}Unicité}{31}{subsection.4.1.7}%
+\contentsline {paragraph}{Preuve:}{31}{section*.9}%
+\contentsline {section}{\numberline {2}Méthodes et types de démonstration}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {2.1}Raisonnement par disjonction des cas*}{32}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {2.2}Raisonnement déductif*}{32}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {2.3}Raisonnement par l'absurde}{32}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {2.4}Raisonnement par la contraposée}{32}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {2.5}Raisonnement par analyse-synthèse}{32}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {2.6}Récurrence}{33}{subsection.4.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Récurrence simple}{33}{subsubsection.4.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Récurrence double(éventuellement à pas fixé*)}{33}{subsubsection.4.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Récurrence forte}{33}{subsubsection.4.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}Récurrence finie*}{33}{subsubsection.4.2.6.4}%

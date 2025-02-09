@@ -980,6 +980,7 @@ Vous trouverez qu'une application et ses propriétés sont très générales, ca
 
 Dans cette partie on va donner quelques types de raisonnements pour vous aider dans les démonstrations. Après chaque point, vous trouverez un exemple classique ou un exemple extrait du cours/TD de Monsieur Hamza que j'ai suivi, avec la correction, pour vous montrer comment rédiger proprement un exercice.
 
+
 \section{À partir des définitions...}
 
 Dans cette section on donne les méthodes et les propriétés qui sont utiles pour les démonstrations. Comme le titre dit, la majorité de ces méthodes sont les applications directes des définitions qu'on connaît déjà.
@@ -994,7 +995,7 @@ On veut montrer une \textbf{assertion universelle}, c'est-à-dire une assertion 
 
 Où $E$ est un ensemble et $P(x)$ un prédicat dépendant de $x$.
 
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode]
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.1]
 
 Dans ce cas, comme on veut le démontrer pour tous les éléments, on prend un élément $x$ quelconque de $E$, puis démontrer $P(x)$. 
 
@@ -1014,6 +1015,11 @@ Montrer que: $\forall x \in \mathbb{R}, \frac{x}{x^{2}+1} \leq \frac{1}{2}$
 
 
 
+
+
+
+
+
 \subsection{Assertions existentielles}
 
 On veut montrer une \textbf{assertion existentielle}, c'est-à-dire une assertion de la forme générale:
@@ -1024,7 +1030,7 @@ On veut montrer une \textbf{assertion existentielle}, c'est-à-dire une assertio
 
 Où $E$ est un ensemble et $P(x)$ un prédicat dépendant de $x$.
 
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode]
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.2]
 
 L'existence se démontre avec un exemple, c'est-à-dire on peut démontrer l'assertion en posant un $x$ particulier, avec $P(x)$ vraie.
 
@@ -1033,74 +1039,219 @@ L'existence se démontre avec un exemple, c'est-à-dire on peut démontrer l'ass
 
 \begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exercice]
 
+Montrer que: $\forall (x,y) \in \mathbb{R}^{2}, \exists z \in \mathbb{R}, z > x + y $
 
 \end{tcolorbox}
+
+\paragraph{Preuve:} Avez-vous un \textbf{exemple} à donner?
+
+\noindent Preuve à rédiger
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Implication(des assertions)}
 
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode]
+Je vous rappelle le point méthode 1.2 qu'on a vu dans le premier chapitre.
 
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.3/1.2]
+
+Soient $P$ et $Q$ deux assertions. On veut démontrer que $P$ implique $Q$.
+
+\begin{itemize}
+ \item Si on sait que l'assertion $P$ est fausse, il n'y a rien à faire.
+ \item Si l'assertion $P$ est vraie, alors on doit démontrer que $Q$ est vraie.
+\end{itemize}
+
+\tcblower
+
+Si vous commencez comme \c ca: ``Supposons que $P$ est vraie'' et puis essayer de démontrer que $Q$ est vraie, c'est FAUX. Vous ne pouvez pas supposer directement que $P$ est vraie. 
+
+Parfois on doit faire une disjonction des cas, la méthode que vous allez voir plus tard.
 
 \end{tcolorbox}
+
+Remarque: Je dis qu'on doit discuter d'abord la vérité de $P$, mais dans les exercices on commence(presque toujours) avec une assertion vraie. Prenez garde quand même.
 
 
 \begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exercice]
 
+Montrer que: $\forall x \in [0,1], x - x^{2} \in \mathbb{N} \Rightarrow x \in \{0,1\} $
+
 
 \end{tcolorbox}
+
+\paragraph{Preuve:} La vérité de la première assertion implique quoi?
+
+\noindent Preuve à rédiger
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Équivalence(des assertions)}
 
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode]
+Deux assertions $P$ et $Q$ sont équivalentes si et seulement si les assertions $P \Rightarrow Q$ et $Q \Rightarrow P$ sont vraies.
 
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.4]
+
+Écrivez deux étapes et démontrer l'implication pour chaque étape.
 
 \end{tcolorbox}
 
 
 \begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exercice]
 
+Soit \( x \in \mathbb{R} \). Montrer que : $\sqrt{x+4} - \sqrt{x+2} = 1 \text{ si et seulement si } x = \frac{-7}{4}$
+
 
 \end{tcolorbox}
+
+
+\paragraph{Preuve:} Le sens direct et le sens réciproque!
+
+\noindent Preuve à rédiger
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Inclusion des ensembles}
 
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode]
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.5/2.1]
 
+Soient $E$ et $F$ deux ensembles. On veut montrer que $F$ est une partie de $E$. Dans ce cas, on prends un élément aléatoire de $F$, et on montre qu'il est aussi un élément de $E$.
+
+Donc il faut commencer avec: ``Soit $x \in F$ ''
 
 \end{tcolorbox}
 
 
 \begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exercice]
 
+On note \( 2\mathbb{N} \) l’ensemble des entiers naturels pairs, et on pose :$E = \{k(k+1), k \in \mathbb{N}\}$.
+Montrer que : $E \subset 2\mathbb{N}$
 
 \end{tcolorbox}
+
+\paragraph{Preuve:} Commencez avec ``soit''
+
+\noindent Preuve à rédiger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Égalité des ensembles}
 
 \begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode]
 
+Deux ensembles sont égaux si on peut démontrer la double inclusion.
 
 \end{tcolorbox}
 
 
 \begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exercice]
 
+Montrer les égalités suivantes :
+
+\[
+| -1, 1 | = \bigcup_{n \in \mathbb{N}^*} \left[ -1 + \frac{1}{n}, 1 - \frac{1}{n} \right] \quad \text{et} \quad [-1, 1] = \bigcap_{n \in \mathbb{N}^*} \left[ -1 - \frac{1}{n}, 1 + \frac{1}{n} \right]
+\]
 
 \end{tcolorbox}
+
+\paragraph{Preuve:} Encore une fois, deux sens à rédiger
+
+\noindent Preuve à rédiger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Unicité}
 
+On veut montrer que l'objet  $x$ qui vérifie $P(x)$ est unique.
 
 \begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode]
 
+Soient \( x, x' \in E \).  
+Faisons l'hypothèse que \( \mathcal{P}(x) \) et \( \mathcal{P}(x') \).  
+Montrons que : \( x = x'. \) 
 
 \end{tcolorbox}
+
+Remarque: On veut montrer l’unicité d’un objet dans un ensemble \( E \) vérifiant une propriété \( \mathcal{P} \), ceci n’est pas équivalente à montrer l’assertion : \(\exists! x \in E, \, \mathcal{P}(x)\)! Pour une assertion $\exists!$ on doit montrer l'existence et l'unicité, mais c'est le deuxième qu'on veut démontrer ici.
+
 
 
 \begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exercice]
 
+Je cherche encore
 
 \end{tcolorbox}
+
+
+\paragraph{Preuve:} 
+
+\noindent Preuve à rédiger
+
+
+
+
+
+
+
+
+
+
 
 
 
