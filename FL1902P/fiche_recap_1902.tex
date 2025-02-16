@@ -66,7 +66,7 @@ On voit que dans le code du cours, il y a l'abréviation FL pour foreign languag
 
 Ce fichier servira donc à rappeler les notions fondamentales de FL1902P aux élèves de première ou deuxième année. Il contient quatre chapitres, qui couvrent le programme du cours : la logique, les ensembles, les applications et les démonstrations. J'ai légèrement modifié l'ordre des chapitres, car, pour bien comprendre les ensembles, certains éléments de logique doivent être expliqués au préalable.
 
-Une remarque : le programme de ce cours a été modifié plusieurs fois, et je pense que l'école publiera une version papier plus tard, avec de nombreux changements. Pour ma part, la partie sur les probabilités était encore incluse, mais l’année prochaine, les élèves étudieront la dénombrabilité et la cardinalité, etc. Ici, je ne conserverai que les quatre premiers chapitres.
+Une remarque : le programme de ce cours a été modifié plusieurs fois, et je pense que l'école publiera une version papier plus tard, avec de nombreux changements. Pour ma part, la partie sur les probabilités était encore incluse, mais l'année prochaine, les élèves étudieront la dénombrabilité et la cardinalité, etc. Ici, je ne conserverai que les quatre premiers chapitres.
 
 % Je remercie sincèrement Monsieur Manuel Mansuy pour son cours de MP2I au Lycée Carnot, qui m'ont donné l'idée de comment structurer plusieurs sections, ainsi que plusieurs exercices pour le chapitre sur les démonstrations. Je remercie également l'équipe de mathématiques de l'École SPEIT, surtout Monsieur Hamza (qui est responsable des cours magistraux de FL1902P) et Monsieur Milan (qui a donné ses remarques et retours). Il y aura peut-être les autres à remercier...
 
@@ -1311,24 +1311,13 @@ Remarque: Il faut que l'assertion $P$ soit vraie! La vérité de l'implication \
 
 \end{tcolorbox}
 
-\subsection{Raisonnement par l'absurde}
 
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.10]
-
-
-\end{tcolorbox}
-
-
-\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exercice]
-
-
-\end{tcolorbox}
 
 \subsection{Raisonnement par la contraposée}
 
 Rappelez-vous que la contraposée d'une implication $P \Rightarrow Q$ est $non Q \Rightarrow non P$, et qu'elles ont même valeur de vérité dans une TDV.
 
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.11]
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.10]
 
 On peut essayer de démontrer une implication en démontrant sa contraposée, car $P \Rightarrow Q$ est équivalente à $non Q \Rightarrow non P$
 
@@ -1340,12 +1329,71 @@ On peut essayer de démontrer une implication en démontrant sa contraposée, ca
 
 \end{tcolorbox}
 
-\subsection{Raisonnement par analyse-synthèse}
 
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.12]
+
+\subsection{Raisonnement par l'absurde}
+
+C'est une méthode utile si on trouve que l'assertion à démontrer est trop difficile si on essaye dans le sens direct.
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.11]
+
+Pour montrer qu'une proposition $P$ est vraie, on peut montrer que \(nonP \Rightarrow \textbf{Faux}\). On écrira ainsi :
+
+\begin{itemize}
+    \item \textbf{Supposons \(P\) fausse}
+    \begin{itemize}
+        \item \dots
+        \item \(\downarrow\) Une contradiction! Ou un truc qui est clairement faux.
+        \item Par conséquent, \(P\) est vraie.
+    \end{itemize}
+\end{itemize}
 
 
 \end{tcolorbox}
+
+Remarque: C'est effectivement la combinaison de 2.2 et de 2.3. Pour commencer, \(nonP \Rightarrow \textbf{Faux}\) est(par sa contraposition) équivalente à \(\textbf{Vrai} \Rightarrow P\). En utilisant un raisonnement déductif et un truc qui est vrai, on montre que $P$ est vraie.
+
+
+
+
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exercice]
+
+
+\end{tcolorbox}
+
+
+
+
+
+\subsection{Raisonnement par analyse-synthèse}
+
+On considère un prédicat \( P(x) \) dépendant d'une variable \( x \in E \). On souhaite déterminer l'ensemble des solutions associé à \( P \), c'est-à-dire l'ensemble \( S \) des \( x \) dans \( E \) tels que \( P(x) \) est vraie.
+
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Point méthode 4.12]
+
+Pour déterminer l'ensemble des \( x \) dans \( E \) tels que \( P(x) \) est vraie, il peut être intéressant de procéder par \textbf{Analyse - Synthèse}. Le raisonnement se fait en deux temps :
+
+\begin{itemize}
+    \item \textbf{Analyse.} On fixe \( x \in E \).
+    
+    On suppose que \( P(x) \) est vraie, et on en déduit des conditions nécessaires sur \( x \).
+    
+    On restreint ainsi le champ des solutions possibles à un sous-ensemble \( C \) de \( E \) qui satisfait \( S \subset C \).
+    
+    \item \textbf{Synthèse.} Pour chaque élément \( x \in C \) satisfaisant les conditions nécessaires de l'analyse, on vérifie si \( P(x) \) est vraie ou fausse, et donc si \( x \in S \) ou \( x \notin S \). On détermine ainsi si les conditions obtenues sont suffisantes ou non.
+\end{itemize}
+
+À l'issue de ces deux étapes, on obtient l'ensemble \( S \) des éléments de \( E \) qui satisfont la propriété \( P \).
+
+
+
+\end{tcolorbox}
+
+
+Remarque: Le raisonnement par Analyse - Synthèse est souvent employé pour montrer les propositions de la forme « \( \exists!x \in E \), \( P(x) \) ». Dans ce cadre, l'analyse réduit le champ des solutions possibles jusqu'à l'obtention d'un unique élément \( x \in E \), puis la synthèse vérifie que cet élément est bel et bien solution.
+
+L'avantage de passer par un raisonnement par Analyse - Synthèse est qu'il est difficile sinon de « deviner » un élément \( x \) solution du problème. En montrant l'unicité dans l'analyse, on prépare ici la preuve de l'existence qui est la synthèse.
 
 
 \begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exercice]
