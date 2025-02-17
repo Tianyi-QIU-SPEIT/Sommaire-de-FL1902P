@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  17 FEB 2025 14:50
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  17 FEB 2025 19:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**fiche_recap_1902.tex
-(./fiche_recap_1902.tex
+**sommaire_1902.tex
+(./sommaire_1902.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -911,8 +911,8 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box73
 \tcb@temp=\box74
 )
-(./fiche_recap_1902.aux)
-\openout1 = `fiche_recap_1902.aux'.
+(./sommaire_1902.aux)
+\openout1 = `sommaire_1902.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
@@ -957,9 +957,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package hyperref Info: Link coloring OFF on input line 52.
 
-(./fiche_recap_1902.out) (./fiche_recap_1902.out)
+(./sommaire_1902.out) (./sommaire_1902.out)
 \@outlinefile=\write4
-\openout4 = `fiche_recap_1902.out'.
+\openout4 = `sommaire_1902.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1056,7 +1056,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
 
-[2] (./fiche_recap_1902.toc
+[2] (./sommaire_1902.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.53937> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1083,7 +1083,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4])
 \tf@toc=\write5
-\openout5 = `fiche_recap_1902.toc'.
+\openout5 = `sommaire_1902.toc'.
 
 
 
@@ -1367,21 +1367,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
 
-[35] (./fiche_recap_1902.aux)
+[35] (./sommaire_1902.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
-Package rerunfilecheck Info: File `fiche_recap_1902.out' has not changed.
+Package rerunfilecheck Info: File `sommaire_1902.out' has not changed.
 (rerunfilecheck)             Checksum: 15273DB41839C486988FF66FCDD066B4;10209.
  ) 
 Here is how much of TeX's memory you used:
  29332 strings out of 474773
- 619178 string characters out of 5757724
+ 619106 string characters out of 5757724
  1934839 words of memory out of 5000000
  50986 multiletter control sequences out of 15000+600000
  587584 words of font info for 100 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,97p,1013b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,97p,1010b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on fiche_recap_1902.pdf (35 pages).
+Output written on sommaire_1902.pdf (35 pages).
